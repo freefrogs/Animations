@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Sora:400,600&display=swap');
+
+/* --General-- */
+:root {
+  --main_font: 'Sora', Verdana, sans-serif;
+  --main_dark: rgb(40,40,43);
+  --main_light: rgb(255,255,255);
+  --shadow: rgb(206,200,205);
+  --neon: rgb(255,170,33);
+  --details: rgb(94,45,150);
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main_font);
+  color: var(--main_light);
+  height: 100vh;
+  background-color: var(--main_dark);
+  min-width: 350px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main_light);
+  font-family: var(--main_font);
+}
+
+ul {
+  list-style: none;
+}
