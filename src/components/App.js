@@ -4,6 +4,7 @@ import Home from './Home';
 import Anim1 from './anim/bg/Anim1';
 import PageNotFound from './PageNotFound';
 import '../styles/App.css';
+import home_icon from '../images/home_icon.png';
 
 class App extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class App extends React.Component {
       <div className="app">
         <BrowserRouter>
           <div>
-            <Link to="/">Home</Link>
+            <Link to="/"><img className="home_icon" src={home_icon} alt="home icon" /></Link>
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/1" exact component={Anim1} />
