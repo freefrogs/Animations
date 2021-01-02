@@ -15,7 +15,6 @@ const shadow = (e) => {
   const final = `${posX}px ${posY}px 10px rgba(255,170,33,0.7), ${posX}px ${posY * (-1)}px 10px rgb(94,45,150)`
 
   title.style.textShadow = final;
-  console.log(title.style, box.style, final);
 }
 
 const Home = () => {

@@ -13,17 +13,14 @@ const parallax = (e) => {
     const pos3 = `${50 - (mouse_w - w) * 0.02}% ${50 - (mouse_h - h) * 0.02}%`;
     const pos4 = `${50 - (mouse_w - w) * 0.01}% ${50 - (mouse_h - h) * 0.01}%`;
     const final_position = `${pos1}, ${pos2}, ${pos3}, ${pos4}`;
-    console.log(final_position);
     el.style.backgroundPosition = final_position;
   } 
 }
 
-class Anim1 extends React.Component {
-  render() {
+const Anim1 = () => {
     return (
       <div className="parallax" onMouseMove={parallax}></div>
     )
-  }
 }
 
 export default Anim1;

@@ -1,0 +1,66 @@
+.anim3 {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%,-50%);
+}
+.anim3 p {
+  width: 75%;
+  margin: 0 auto;
+  line-height: 2;
+  text-align: center;
+}
+.anim3 p:first-of-type {
+  margin-bottom: 20px;
+}
+.anim3 p:first-of-type span {
+  color: var(--details);
+}
+.anim3 span {
+  position: relative;
+  top: 2em;
+  opacity: 0;
+  color: var(--neon);
+  animation: text 1s ease-in-out forwards;
+}
+/* .anim3 span:nth-child(4n+1) {
+  animation-delay: 0s;
+}
+.anim3 span:nth-child(4n+2) {
+  animation-delay: 0.5s;
+}
+.anim3 span:nth-child(4n+3) {
+  animation-delay: 1s;
+}
+.anim3 span:nth-child(4n) {
+  animation-delay: 1.5s;
+} */
+.anim3 span:nth-child(8n+1) {
+  animation-delay: 0s;
+}
+.anim3 span:nth-child(8n+2) {
+  animation-delay: .3s;
+}
+.anim3 span:nth-child(8n+3) {
+  animation-delay: .6s;
+}
+.anim3 span:nth-child(8n+4) {
+  animation-delay: .9s;
+}
+.anim3 span:nth-child(8n+5) {
+  animation-delay: 1.2s;
+}
+.anim3 span:nth-child(8n+6) {
+  animation-delay: 1.5s;
+}
+.anim3 span:nth-child(8n+7) {
+  animation-delay: 1.8s;
+}
+.anim3 span:nth-child(8n) {
+  animation-delay: 2.1s;
+}
+@keyframes text {
+  100% {opacity: 1; top: 0; color: var(--main_light);}
+}
