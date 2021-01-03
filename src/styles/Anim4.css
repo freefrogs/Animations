@@ -1,0 +1,109 @@
+.loaders_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.loaders h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.loader {
+  width: 20vw;
+  height: 20vw;
+  position: relative;
+}
+/* loader1 */
+.loader1 div {
+  position: absolute;
+  border-radius: 50%;
+  border: 2vw solid var(--details2);
+  border-top-color: var(--neon);
+  animation: spin 2s infinite;
+}
+.loader1 div:first-of-type {
+  width: 20vw;
+  height: 20vw;
+}
+.loader1 div:nth-of-type(2) {
+  width: 13.333vw;
+  height: 13.333vw;
+  animation-delay: .25s;
+}
+.loader1 div:last-of-type {
+  width: 6.667vw;
+  height: 6.667vw;
+  animation-delay: .5s;
+}
+
+/* loader2 */
+.loader2 div {
+  width: 15vw;
+  height: 15vw;
+  position: relative;
+  margin: 1vw auto;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-left: 3px solid var(--neon);
+  border-right: 3px solid var(--neon);
+  background: radial-gradient(var(--details) 5%, transparent 25%);
+  animation: spin_right 2s linear infinite;
+}
+.loader2 div::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 8vw;
+  height: 8vw;
+  border: 2px solid transparent;
+  border-left: 2px solid var(--neon);
+  border-right: 2px solid var(--neon);
+  border-radius: 50%;
+  animation: spin_left 1s linear infinite;
+}
+
+/* loader3 */
+.loader3::before, .loader3::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform-origin: center;
+}
+.loader3::after {
+  box-shadow: inset 25px 0 0 var(--details2), inset -25px 0 0 var(--details);
+  animation: morpho1 2s linear infinite;
+  width: 18vw;
+  height: 18vw;
+}
+.loader3::before {
+  box-shadow: inset 25px 0 0 var(--neon), inset -25px 0 0 var(--neon2);
+  animation: morpho2 2s linear infinite;
+  width: 18vw;
+  height: 18vw;
+}
+
+@keyframes spin {
+  50%,
+  100% {
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+
+@keyframes spin_right {
+  to {transform: rotate(360deg);}
+}
+@keyframes spin_left {
+  to {transform: translate(-50%,-50%) rotate(-360deg);}
+}
+
+@keyframes morpho1 {
+  0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
+  50% {transform: rotateZ(180deg) scaleX(0.45) scaleY(0.95);}
+  100% {transform: rotateZ(360deg) scaleX(1) scaleY(1);}
+}
+@keyframes morpho2 {
+  0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
+  50% {transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.45);}
+  100% {transform: rotateZ(-360deg) scaleX(1) scaleY(1);}
+}

@@ -7,7 +7,9 @@
   --main_light: rgb(255,255,255);
   --shadow: rgb(206,200,205);
   --neon: rgb(255,170,33);
+  --neon2: rgba(255,170,33,0.3);
   --details: rgb(94,45,150);
+  --details2: rgba(94,45,150,0.3);
 }
 * {
 	box-sizing: border-box;
@@ -45,6 +47,18 @@ ul {
 }
 .home_icon:hover {
   opacity: 1;
+}
+.container {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 footer {
   position: absolute;

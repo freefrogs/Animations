@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Home from './Home';
 import Anim1 from './anim/bg/Anim1';
 import Anim3 from './anim/text/Anim3';
+import Anim4 from './anim/loader/Anim4';
 import PageNotFound from './PageNotFound';
 import '../styles/App.css';
 import home_icon from '../images/home_icon.png';
@@ -20,6 +21,7 @@ class App extends React.Component {
               <Route path="/" exact component={Home} />
               <Route path="/1" exact component={Anim1} />
               <Route path="/2" exact component={Anim3} />
+              <Route path="/3" exact component={Anim4} />
               <Route component={PageNotFound} />
             </Switch>
             <footer>Copyright {year} Justyna Biernacka</footer>

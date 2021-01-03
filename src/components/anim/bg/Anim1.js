@@ -19,7 +19,7 @@ const parallax = (e) => {
 
 const Anim1 = () => {
     return (
-      <div className="parallax" onMouseMove={parallax}></div>
+      <div className="parallax container" onMouseMove={parallax}></div>
     )
 }
 

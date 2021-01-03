@@ -17,7 +17,7 @@ const Anim3 = () => {
     return <span key={n}>{word} </span>
   })
   return (
-    <div className="anim3">
+    <div className="anim3 container">
       <p>{lettersList}</p>
       <p>{wordsList}</p>
     </div>
