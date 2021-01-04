@@ -1,0 +1,46 @@
+.Anim5 {
+  height: 80vh;
+}
+.Anim5 .bg {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: linear-gradient(110deg, transparent 40%, var(--details2), var(--details), var(--details2), transparent 60%), linear-gradient(80deg, transparent 40%, var(--details2), var(--details), var(--details2), transparent 60%);
+  animation: show 5s linear forwards;
+}
+.Anim5 .box {
+  width: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+.Anim5 .hand1_box {
+  top: 45%;
+  left: 28%;
+}
+.Anim5 .hand2_box {
+  top: 54%;
+  left: 77%;
+}
+.Anim5 path {
+  fill: transparent;
+  stroke-width: 0.5px;
+  animation: draw 5s ease-in-out forwards;
+}
+.Anim5 .hand1 {
+  stroke-dasharray: 325;
+  stroke-dashoffset: 325;
+  stroke: var(--details);
+}
+.Anim5 .hand2 {
+  stroke-dasharray: 305;
+  stroke-dashoffset: 305;
+  stroke: var(--neon);
+}
+
+@keyframes draw {
+  to {stroke-dashoffset: 0; stroke: var(--main_light);}
+}
+
+@keyframes show {
+  to {opacity: 1;}
+}
