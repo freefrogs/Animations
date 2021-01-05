@@ -1,0 +1,41 @@
+.Anim6 {
+  height: 80vh;
+}
+.Anim6 svg {
+  height: 80vh;
+  position: absolute;
+}
+.Anim6 path {
+  fill-opacity: 0.2;
+  fill: var(--neon2);
+  stroke-width: 0.5px;
+  stroke: var(--details2);
+  animation: draw2 5s ease-in-out forwards;
+}
+.Anim6 .state1 {
+  fill-opacity: 0;
+  stroke-dasharray: 480;
+  stroke-dashoffset: 480;
+}
+.Anim6 .state2 {
+  stroke-dasharray: 285;
+  stroke-dashoffset: 285;
+}
+.Anim6 .state3 {
+  stroke-dasharray: 205;
+  stroke-dashoffset: 205;
+}
+.Anim6 .state4 {
+  stroke-dasharray: 170;
+  stroke-dashoffset: 170;
+}
+.Anim6 .state5 {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+
+@keyframes draw2 {
+  30% {stroke-width: 2px;}
+  70% {stroke-width: 0.5px;}
+  100% {stroke-dashoffset: 0; fill: transparent; stroke: var(--main_light);}
+}
