@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 import Home from './Home';
 import Anim1 from './anim/bg/Anim1';
 import Anim3 from './anim/text/Anim3';
@@ -16,7 +16,7 @@ class App extends React.Component {
     const year = today.getFullYear();
     return (
       <div className="app">
-        <BrowserRouter>
+        <HashRouter>
           <div>
             <Link to="/"><img className="home_icon" src={home_icon} alt="home icon" /></Link>
             <Switch>
@@ -30,7 +30,7 @@ class App extends React.Component {
             </Switch>
             <footer>Copyright {year} Justyna Biernacka</footer>
           </div>
-          </BrowserRouter>
+          </HashRouter>
       </div>
     )
   }
