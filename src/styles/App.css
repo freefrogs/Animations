@@ -65,3 +65,19 @@ footer {
   bottom: 1%;
   font-size: 0.9rem;
 }
+label {
+  padding-right: 10px;
+}
+input {
+  border: none;
+  border-bottom: 1px solid var(--neon2);
+  background: inherit;
+  outline: none;
+  color: var(--main_light);
+  font-family: var(--main_font);
+  font-size: 1em;
+}
+input:focus {
+  border: none;
+  border-bottom: 1px solid var(--neon);
+}
