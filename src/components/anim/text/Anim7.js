@@ -9,7 +9,7 @@ class Anim7 extends React.Component {
   }
   render() {
     return (
-      <div className="Anim7 container">
+      <div className="anim7 container">
         <div className="input_box">
           <label>Enter you text:</label>
           <input 

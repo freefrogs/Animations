@@ -3,7 +3,7 @@ import '../../../styles/Anim5.css';
 
 const Anim5 = () => {
   return (
-    <div className="Anim5 container">
+    <div className="anim5 container">
       <div className="bg"></div>
       <div className="box hand1_box">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 40">

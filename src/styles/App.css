@@ -81,3 +81,12 @@ input:focus {
   border: none;
   border-bottom: 1px solid var(--neon);
 }
+button {
+  cursor: pointer;
+  font-family: var(--main_font);
+  text-transform: uppercase;
+  border:0;
+  outline:none;
+  box-shadow:none;
+  transition: 0.4s;
+}
