@@ -1,4 +1,6 @@
 .loaders_box {
+  --size: 20vw;
+  --shadow: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,8 +10,8 @@
   margin-bottom: 20px;
 }
 .loader {
-  width: 20vw;
-  height: 20vw;
+  width: var(--size);
+  height: var(--size);
   position: relative;
 }
 /* loader1 */
@@ -21,24 +23,24 @@
   animation: spin 2s infinite;
 }
 .loader1 div:first-of-type {
-  width: 20vw;
-  height: 20vw;
+  width: var(--size);
+  height: var(--size);
 }
 .loader1 div:nth-of-type(2) {
-  width: 13.333vw;
-  height: 13.333vw;
+  width: calc(var(--size) * 0.66666);
+  height: calc(var(--size) * 0.66666);
   animation-delay: .25s;
 }
 .loader1 div:last-of-type {
-  width: 6.667vw;
-  height: 6.667vw;
+  width: calc(var(--size) * 0.33333);
+  height: calc(var(--size) * 0.33333);
   animation-delay: .5s;
 }
 
 /* loader2 */
 .loader2 div {
-  width: 15vw;
-  height: 15vw;
+  width: calc(var(--size) * 0.75);
+  height: calc(var(--size) * 0.75);;
   position: relative;
   margin: 1vw auto;
   border-radius: 50%;
@@ -54,8 +56,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 8vw;
-  height: 8vw;
+  width: calc(var(--size) * 0.4);
+  height: calc(var(--size) * 0.4);
   border: 2px solid transparent;
   border-left: 2px solid var(--neon);
   border-right: 2px solid var(--neon);
@@ -69,18 +71,16 @@
   position: absolute;
   border-radius: 50%;
   transform-origin: center;
+  width: calc(var(--size) * 0.9);
+  height: calc(var(--size) * 0.9);
 }
 .loader3::after {
-  box-shadow: inset 25px 0 0 var(--details2), inset -25px 0 0 var(--details);
+  box-shadow: inset var(--shadow) 0 0 var(--details2), inset calc(var(--shadow) * (-1)) 0 0 var(--details);
   animation: morpho1 2s linear infinite;
-  width: 18vw;
-  height: 18vw;
 }
 .loader3::before {
-  box-shadow: inset 25px 0 0 var(--neon), inset -25px 0 0 var(--neon2);
+  box-shadow: inset var(--shadow) 0 0 var(--neon), inset calc(var(--shadow) * (-1)) 0 0 var(--neon2);
   animation: morpho2 2s linear infinite;
-  width: 18vw;
-  height: 18vw;
 }
 
 @keyframes spin {
@@ -106,4 +106,15 @@
   0% {transform: rotateZ(0deg) scaleX(1) scaleY(1);}
   50% {transform: rotateZ(-180deg) scaleX(0.95) scaleY(0.45);}
   100% {transform: rotateZ(-360deg) scaleX(1) scaleY(1);}
+}
+
+@media (max-width: 750px) {
+  .loaders_box {
+    --size: 40vw;
+    --shadow: 10px;
+    flex-wrap: wrap;
+  }
+  .loader {
+    margin: 10px;
+  }
 }

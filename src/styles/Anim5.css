@@ -44,3 +44,9 @@
 @keyframes show {
   to {opacity: 1;}
 }
+
+@media (max-width: 750px) {
+  .anim5 .hand2_box {
+    top: 48%;
+  }
+}

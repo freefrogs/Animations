@@ -90,3 +90,9 @@ button {
   box-shadow:none;
   transition: 0.4s;
 }
+
+@media (max-width: 450px) {
+  footer {
+    font-size: 0.7rem;
+  }
+}
