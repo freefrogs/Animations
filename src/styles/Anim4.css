@@ -7,7 +7,7 @@
 }
 .loaders h1 {
   text-align: center;
-  margin-bottom: 20px;
+  padding: 2% 0;
 }
 .loader {
   width: var(--size);

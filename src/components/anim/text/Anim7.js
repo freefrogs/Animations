@@ -18,7 +18,7 @@ class Anim7 extends React.Component {
             onChange={this.onInputChange}
           />
         </div>
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" style={{stopColor: 'rgb(94,45,150)', stopOpacity: 1}} />

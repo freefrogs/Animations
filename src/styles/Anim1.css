@@ -1,6 +1,5 @@
 .parallax {
-  overflow: hidden;
-  height: 80vh;
+  touch-action: none;
   background-image: url(../images/a1/4.png), url(../images/a1/3.png), url(../images/a1/2.png), url(../images/a1/1.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;

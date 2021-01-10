@@ -3,7 +3,7 @@
 }
 .anim8 .choose_box {
   text-align: center;
-  margin-bottom: 40px;
+  padding: 2% 0;
 }
 .anim8 .button {
   margin: 10px;
@@ -15,12 +15,10 @@
 .anim8 .button1 {
   border-radius: 25%;
   border-style: dashed;
-  
 }
 .anim8 .button2 {
   border-radius: 100px 10px 100px 10px / 10px 100px 10px 100px;
   box-shadow: 2px 2px 10px var(--details);
-  
 }
 .anim8 .button3 {
   border-radius: 30% 60% 60% 30% / 40% 40% 60% 60%;
@@ -28,16 +26,21 @@
 .anim8 .button:hover {
   background: var(--details);
 }
+.anim8 .active {
+  background: var(--details);
+}
 .anim8 .cards_box {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .anim8 .card {
-  padding: 40px 30px;
-  margin: 20px;
+  padding: 2%;
+  margin: 1%;
   position: relative;
   text-align: center;
+  width: 25%;
 }
 .anim8 .card h2 {
   padding-bottom: 20px;
@@ -49,10 +52,9 @@
   transition: 0.4s;
   display: inline-block;
   margin-top: 20px;
-  position: relative;
-  z-index: 10;
 }
 .anim8 span {
+  pointer-events: none;
   border: 1px solid var(--main_light);
   position: absolute;
   width: 100%;
@@ -70,4 +72,25 @@
 
 @keyframes rotate8 {
   to {transform: translate(-50%,-50%) rotate(360deg)}
+}
+
+@media (max-width: 1200px) {
+  .anim8 .card p, .anim8 .card a {
+    font-size: 0.8em;
+  }
+  .anim8 .card h2 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 1000px) {
+  .anim8 .card {
+    width: 40%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 550px) {
+  .anim8 .card {
+    width: 80%;
+  }
 }
