@@ -8,6 +8,7 @@ import Anim5 from './anim/bg/Anim5';
 import Anim6 from './anim/bg/Anim6';
 import Anim7 from './anim/text/Anim7';
 import Anim8 from './anim/card/Anim8';
+import Anim9 from './anim/bg/Anim9'
 import PageNotFound from './PageNotFound';
 import '../styles/App.css';
 import home_icon from '../images/home_icon.png';
@@ -30,6 +31,7 @@ class App extends React.Component {
               <Route path="/5" exact component={Anim6} />
               <Route path="/6" exact component={Anim7} />
               <Route path="/7" exact component={Anim8} />
+              <Route path="/8" exact component={Anim9} />
               <Route component={PageNotFound} />
             </Switch>
             <footer>Copyright {year} Justyna Biernacka</footer>

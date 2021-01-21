@@ -1,0 +1,37 @@
+.anim9 {
+  --x: 4em;
+  --y: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main_dark);
+  position: relative;
+  touch-action: none;
+}
+.anim9 .pic {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background: url(../images/a2/bunny.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: .2s;
+  clip-path: circle(4em at var(--x) var(--y));
+}
+.anim9 .pic:active {
+  clip-path: circle(8em at var(--x) var(--y));
+}
+.anim9 .content {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  user-select: none;
+}
+.anim9 h2 {
+  font-size: 3em;
+}
