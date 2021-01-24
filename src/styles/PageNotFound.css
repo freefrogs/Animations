@@ -1,0 +1,15 @@
+.page_error {
+  text-align: center;
+}
+.page_error a {
+  color: var(--neon);
+}
+.page_error h3 {
+  margin: 20px 0;
+}
+.page_error iframe {
+  width: 80%;
+  height: 80vh;
+  border: none;
+  box-shadow: 0 0 10px var(--neon);
+}
