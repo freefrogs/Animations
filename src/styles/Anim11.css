@@ -1,0 +1,53 @@
+.anim11 {
+  --reflection: below 1px linear-gradient(transparent 70%, var(--main_dark3));
+}
+.anim11 h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+.anim11 .card_box {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.anim11 .card11 {
+  position: relative;
+  max-width: 300px;
+  margin: 20px;
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: .5s;
+  cursor: pointer;
+  opacity: 0.4;
+}
+.card11:hover {
+  transform: perspective(800px) rotateY(0);
+  opacity: 1;
+}
+.anim11 .card11_flip {
+  transform: perspective(800px) rotateY(0);
+  opacity: 1;
+}
+.anim11 img {
+  object-fit: cover;
+  -webkit-box-reflect: var(--reflection);
+}
+.card11:hover .desc {
+  opacity: 1;
+  transform: translateY(0);
+}
+.anim11 .card11 .desc_flip {
+  opacity: 1;
+  transform: translateY(0);
+}
+.anim11 .desc {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: .5s;
+}

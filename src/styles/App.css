@@ -5,6 +5,7 @@
   --main_font: 'Sora', Verdana, sans-serif;
   --main_dark: rgb(40,40,43);
   --main_dark2: rgb(60, 60, 65);
+  --main_dark3: rgba(40,40,43,0.2);
   --main_light: rgb(255,255,255);
   --shadow: rgb(206,200,205);
   --neon: rgb(255,170,33);
@@ -64,6 +65,7 @@ ul {
 footer {
   text-align: center;
   font-size: 0.9rem;
+  padding-bottom: 20px;
 }
 label {
   padding-right: 10px;
