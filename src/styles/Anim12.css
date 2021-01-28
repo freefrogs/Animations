@@ -1,0 +1,110 @@
+.anim12 {
+  width: 90%;
+  margin: 20px auto;
+  padding-top: 2em;
+  min-height: 85vh;
+  height: auto;
+  text-align: center;
+  background: radial-gradient(circle at 0 0,transparent 30%, var(--details2) 30%, var(--details2) 45%,transparent 45%), radial-gradient(circle at 100% 100%,transparent 25%, var(--details2) 25%, var(--details2) 40%,transparent 40%);
+  background-size: 150px 150px, 150px 150px;
+  animation: shift 15s linear infinite;
+}
+.anim12 h2 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+.anim12 .cards_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.anim12 .card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  background: linear-gradient(115deg, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.3)) ;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+}
+.anim12 img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .5s;
+}
+.anim12 .card:hover img {
+  transform: translate(-50%, -70px) rotate(-10deg) scale(1.1);
+}
+.anim12 .img2 {
+  filter: hue-rotate(60deg);
+}
+.anim12 .card_desc {
+  top: 75%;
+  transform: translate(-50%,0);
+  opacity: 0;
+  transition: .5s;
+}
+.anim12 .card:hover .card_desc {
+  opacity: 1;
+  transform: translate(-50%,-50%); 
+}
+.anim12 button {
+  transition: .4s;
+}
+.anim12 .color_box {
+  position: relative;
+}
+.anim12 .color_box::before {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: -50%;
+  width: 84px;
+  height: 37px;
+  background: url(../images/a12/arrow.png);
+  background-size: cover;
+  transform: rotate(-25deg);
+  animation: arrow 1s ease-in-out infinite both;
+}
+.anim12 .color_box .btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 20px 10px 30px;
+  box-shadow: 0 0 10px var(--main_light);
+  opacity: 0.6;
+}
+.anim12 .color_box .btn:hover {
+  opacity: 1;
+}
+.anim12 .orange {
+  background-color: var(--neon);
+}
+.anim12 .violet {
+  background-color: var(--details2);
+}
+.anim12 .blue {
+  background-color: var(--additional);
+}
+.anim12 .cta {
+  padding: 5px 10px;
+  border-radius: 2px;
+  background-color: var(--main_dark);
+  color: var(--main_light);
+}
+.anim12 .cta:hover {
+  transform: scale(1.1);
+}
+
+@keyframes shift {
+  to { background-position: 150px -150px,150px -150px }
+ }
+@keyframes arrow {
+  0% {transform: translate(0,0) rotate(-25deg);}
+  50% {transform: translate(-10px,10px) rotate(-25deg);}
+  100% {transform: translate(0,0) rotate(-25deg);}
+}
