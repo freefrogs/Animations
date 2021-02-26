@@ -13,6 +13,7 @@ import Anim10 from './anim/card/Anim10';
 import Anim11 from './anim/card/Anim11';
 import Anim12 from './anim/card/Anim12';
 import PageNotFound from './PageNotFound';
+import Arrows from '../components/Arrows';
 import '../styles/App.css';
 import home_icon from '../images/home_icon.png';
 
@@ -25,6 +26,7 @@ class App extends React.Component {
         <HashRouter>
           <div>
             <Link to="/"><img className="home_icon" src={home_icon} alt="home icon" /></Link>
+            <Arrows />
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/1" exact component={Anim1} />

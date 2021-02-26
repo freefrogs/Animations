@@ -93,6 +93,9 @@ button {
   box-shadow:none;
   transition: 0.4s;
 }
+.hide {
+  display: none;
+}
 
 @media (max-width: 450px) {
   footer {

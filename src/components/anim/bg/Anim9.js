@@ -17,7 +17,6 @@ const showPic = (e) => {
   let x;
   let y;
   const w = window.innerWidth;
-  console.log(e);
   if (e.type === 'touchstart' || e.type === 'touchmove') {
     x = e.touches[0].clientX - w*0.1;
     y = e.touches[0].clientY;
