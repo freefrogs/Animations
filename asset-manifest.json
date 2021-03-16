@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Animations/static/css/main.ebbf05a2.chunk.css",
-    "main.js": "/Animations/static/js/main.192bfce6.chunk.js",
-    "main.js.map": "/Animations/static/js/main.192bfce6.chunk.js.map",
+    "main.css": "/Animations/static/css/main.d7589829.chunk.css",
+    "main.js": "/Animations/static/js/main.7204e66b.chunk.js",
+    "main.js.map": "/Animations/static/js/main.7204e66b.chunk.js.map",
     "runtime-main.js": "/Animations/static/js/runtime-main.9f841bd0.js",
     "runtime-main.js.map": "/Animations/static/js/runtime-main.9f841bd0.js.map",
     "static/js/2.dad7d085.chunk.js": "/Animations/static/js/2.dad7d085.chunk.js",
     "static/js/2.dad7d085.chunk.js.map": "/Animations/static/js/2.dad7d085.chunk.js.map",
     "index.html": "/Animations/index.html",
-    "static/css/main.ebbf05a2.chunk.css.map": "/Animations/static/css/main.ebbf05a2.chunk.css.map",
+    "static/css/main.d7589829.chunk.css.map": "/Animations/static/css/main.d7589829.chunk.css.map",
     "static/js/2.dad7d085.chunk.js.LICENSE.txt": "/Animations/static/js/2.dad7d085.chunk.js.LICENSE.txt",
     "static/media/Anim1.css": "/Animations/static/media/4.11392458.png",
     "static/media/Anim9.css": "/Animations/static/media/bunny.42c509de.jpg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.9f841bd0.js",
     "static/js/2.dad7d085.chunk.js",
-    "static/css/main.ebbf05a2.chunk.css",
-    "static/js/main.192bfce6.chunk.js"
+    "static/css/main.d7589829.chunk.css",
+    "static/js/main.7204e66b.chunk.js"
   ]
 }
