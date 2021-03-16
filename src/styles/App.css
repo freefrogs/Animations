@@ -53,9 +53,10 @@ ul {
   opacity: 1;
 }
 .container {
-  min-height: 90vh;
+  width: 90%;
+  min-height: 85vh;
   height: auto;
-  margin-bottom: 20px;
+  margin: 10px auto;
 }
 .center {
   position: absolute;
@@ -64,9 +65,11 @@ ul {
   transform: translate(-50%,-50%);
 }
 footer {
+  width: 90%;
+  margin: 0 auto;
   text-align: center;
   font-size: 0.9rem;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 label {
   padding-right: 10px;
@@ -96,7 +99,11 @@ button {
 .hide {
   display: none;
 }
-
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+}
 @media (max-width: 450px) {
   footer {
     font-size: 0.7rem;

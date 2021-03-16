@@ -18,10 +18,10 @@ const showPic = (e) => {
   let y;
   const w = window.innerWidth;
   if (e.type === 'touchstart' || e.type === 'touchmove') {
-    x = e.touches[0].clientX - w*0.1;
+    x = e.touches[0].clientX - w*0.15;
     y = e.touches[0].clientY;
   } else {
-    x = e.clientX - w*0.1;
+    x = e.clientX - w*0.15;
     y = e.clientY;
   }
   container.style.setProperty('--x', `${x}px`);

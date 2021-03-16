@@ -28,7 +28,7 @@ const shadow = (e) => {
 
 const Home = () => {
   return (
-      <div className="home" onMouseMove={shadow} onTouchStart={shadow} onTouchMove={shadow} >
+      <div className="home container" onMouseMove={shadow} onTouchStart={shadow} onTouchMove={shadow} >
           <h1>Animations</h1>
       </div>
   )

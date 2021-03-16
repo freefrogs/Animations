@@ -1,5 +1,7 @@
 .anim3 {
-  padding-top: 10%;
+  min-height: 85vh;
+  padding-top: 5%;
+  padding-bottom: 2%;
 }
 .anim3 p {
   width: 75%;
@@ -61,6 +63,9 @@
 }
 
 @media (max-width: 800px) {
+  .anim3 {
+    padding-top: 12%;
+  }
   .anim3 p {
     font-size: 0.6em;
   }
