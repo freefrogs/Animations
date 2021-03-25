@@ -12,6 +12,7 @@ import Anim9 from './anim/bg/Anim9';
 import Anim10 from './anim/card/Anim10';
 import Anim11 from './anim/card/Anim11';
 import Anim12 from './anim/card/Anim12';
+import Anim13 from './anim/slider/Anim13';
 import PageNotFound from './PageNotFound';
 import Arrows from '../components/Arrows';
 import '../styles/App.css';
@@ -40,6 +41,7 @@ class App extends React.Component {
               <Route path="/9" exact component={Anim10} />
               <Route path="/10" exact component={Anim11} />
               <Route path="/11" exact component={Anim12} />
+              <Route path="/12" exact component={Anim13} />
               <Route component={PageNotFound} />
             </Switch>
             <footer>Copyright {year} Justyna Biernacka</footer>
