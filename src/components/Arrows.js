@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Arrows.css';
 
-const pages = 12;
+const pages = 13;
 const checkPage = () => {
   const getUrl = window.location.href.split('#/');
   const pageNo = getUrl[getUrl.length-1];
